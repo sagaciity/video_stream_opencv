@@ -9,9 +9,8 @@ import os
 import rospy
 import sys
 import time
-from BaseHTTPServer import BaseHTTPRequestHandler
-from BaseHTTPServer import HTTPServer
-from SocketServer import ThreadingMixIn
+from http.server import BaseHTTPRequestHandler, HTTPServer
+from socketserver import ThreadingMixIn
 
 
 VIDEO_PATH = None
