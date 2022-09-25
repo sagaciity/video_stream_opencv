@@ -2,3 +2,5 @@
 *.pyc
 *.csv
 .vscode
+*.mp4
+!test/small.mp4
