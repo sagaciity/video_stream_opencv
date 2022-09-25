@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   image_transport
   camera_info_manager
   sensor_msgs
+  std_msgs
 )
 
 
@@ -31,7 +32,7 @@ install(TARGETS video_stream
 
 install(PROGRAMS
   scripts/test_video_resource.py
-
+  record_cam_frames.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
